@@ -1,0 +1,32 @@
+html,
+body {
+	height: 100%;
+}
+
+#container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	background-color: #777;
+	gap: 10px;
+	height: 100%;
+}
+
+#container>div {
+	background-color: green;
+	font-size: 25vmin;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Readex Pro', sans-serif;
+}
+
+#banner {
+	background-color: #fff;
+	border: 10px solid gray;
+	padding: 70px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+}
