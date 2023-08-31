@@ -78,7 +78,6 @@ function isDiagonalWinner (player, board) {
 	return params.gameStatusResultNoWinner;
 };
 
-
 function isRowWinner (player, board) {
 	let won = false;
 	board.forEach(r => {
@@ -108,9 +107,6 @@ function reset() {
 	gameStatus.xMove = true;
 	gameStatus.result = params.gameStatusResultNoWinner;
 	gameStatus.numberOfMoves = 0;
-	// console.log(gameStatus.xMove);
-	// console.log(gameStatus.result);
-	// console.log(gameStatus.numberOfMoves);
 	displayBanner('',  false);
 	displayBoard();
 };
